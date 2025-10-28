@@ -54,10 +54,10 @@ export default function Home() {
         <div className="relative z-10 text-center px-4 md:px-8 lg:px-16">
           <div className="flex flex-col lg:flex-row items-center justify-center gap-8 max-w-7xl mx-auto">
             <div className="flex flex-col items-center justify-center m-auto lg:items-start gap-6 w-full lg:w-3/4">
-              <h6 className="text-white font-light text-[2rem] md:text-3xl lg:text-4xl xl:text-6xl">
+              <h6 className="text-white m-auto text-center font-light text-[2rem] md:text-3xl lg:text-4xl xl:text-6xl">
                 فرص استثمارية واعدة مع
               </h6>
-              <h1 className="text-white font-bold text-5xl md:text-5xl lg:text-6xl xl:text-8xl">
+              <h1 className="text-white text-center m-auto font-bold text-5xl md:text-5xl lg:text-6xl xl:text-8xl">
                 تدبير المتخصصة
               </h1>
               <p className="text-white m-auto font-light text-base md:text-lg max-w-lg leading-relaxed">
@@ -96,7 +96,7 @@ export default function Home() {
           {chances.length > 0 ? (
             <>
               {/* Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 py-16">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 py-16 px-4 md:px-0">
                 {chances.map((item) => (
                   <div
   key={item.id}
@@ -158,7 +158,7 @@ export default function Home() {
               {/* Details Chance Only */}
               {selectedChance && (
                 <div className="pt-10 pb-20">
-                  <div className="w-full md:w-[90%] lg:w-[80%] xl:w-[80%] m-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="w-full m-auto grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="col-span-1 md:col-span-2">
                                  {/* Sidebar */}
                     <div className="block md:hidden col-span-1">

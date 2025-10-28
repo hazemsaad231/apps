@@ -57,23 +57,7 @@ body {
 
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper {
-  width: 100%;
-  height: 440px;
-}
 
 :root {
   --radius: 0.625rem;
@@ -151,4 +135,40 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 440px;
+}
+   .swiper-button-prev,
+.swiper-button-next {
+  color: white !important; /* غيّر اللون */
+  width: 40px !important; /* عرض الزر */
+  height: 40px !important; /* ارتفاع الزر */
+  background-color: #dbbb39 !important; /* خلفية الزر */
+  border-radius: 50%; /* شكل دائري */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 10px; /* حجم السهم */
+  font-weight: bold;
 }
