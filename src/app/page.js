@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import bg from "../../public/bg.jpg";
-import layer from "../../public/Layer.png";
+// import layer from "../../public/Layer.png";
 import CategoriesSidebar from "./pages/parts/list";
 import CategoriesMain from "./pages/parts/details";
 import Slider from "./pages/parts/slider";
@@ -34,7 +34,7 @@ export default function Home() {
 
   const handleCardClick = (item) => {
     setSelectedChance(item); // استبدال التفاصيل بالفرصة المختارة
-    window.scrollTo({ top: 600, behavior: "smooth" }); // سكرول تقريبي لمكان التفاصيل
+    // window.scrollTo({ top: 600, behavior: "smooth" }); // سكرول تقريبي لمكان التفاصيل
   };
 
   return (
@@ -76,11 +76,10 @@ export default function Home() {
             <div className="hidden lg:flex w-1/2 justify-center relative">
               <div className="relative w-96 h-96">
                 <Image
-                  src={layer || "/placeholder.svg"}
+                  src={'/Layer.png'}
                   alt="Layer Image"
                   width={320}
                   height={320}
-                  placeholder="blur"
                   className="relative z-10 w-full h-full object-contain drop-shadow-2xl"
                   priority
                 />
@@ -161,13 +160,9 @@ export default function Home() {
                 <div className="pt-10 pb-20">
                   <div className="w-full md:w-[90%] lg:w-[80%] xl:w-[80%] m-auto grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="col-span-1 md:col-span-2">
-                      <Slider
-                        src={(selectedChance.gallery || []).map((i) => i.photo_url)}
-                        typeSrc={(selectedChance.gallery || []).map((i) => i.type_photo)}
-                      />
-                            {/* Sidebar */}
+                                 {/* Sidebar */}
                     <div className="block md:hidden col-span-1">
-                      <div className="w-full md:w-60 lg:w-80 h-max rounded-4xl bg-white shadow-lg border p-4 py-10 flex flex-col gap-3 mt-16">
+                      <div className="w-full md:w-60 lg:w-80 h-max rounded-4xl bg-white shadow-lg border p-4 py-10 flex flex-col gap-3 mb-12">
                         <h3 className="text-lg font-extrabold text-[#262163]">استثمر في تدبير</h3>
                         <p className="text-gray-500">سجّل الآن للاستثمار في تدبير، وابدأ بمتابعة مستجدات الشركة وفرص نموها بشكل تلقائي.</p>
                         <div className="bg-[#dbbb39] text-white py-2 px-4 w-max cursor-pointer rounded-full font-semibold">
@@ -177,6 +172,11 @@ export default function Home() {
                         <CategoriesSidebar categories={selectedChance.categories || []} />
                       </div>
                     </div>
+                      <Slider
+                        src={(selectedChance.gallery || []).map((i) => i.photo_url)}
+                        typeSrc={(selectedChance.gallery || []).map((i) => i.type_photo)}
+                      />
+                 
                       <div className="py-12">
                         <h3 className="text-2xl font-bold text-[#262163] mb-4">ابرز المعومات</h3>
                         <div className="flex justify-between mt-4">
