@@ -22,7 +22,7 @@ export default function Footer() {
                 حلول مبتكرة وموثوقة لتحقيق أهدافك بكفاءة واحترافية.
               </p>
               <div className="flex gap-3 pt-2">
-                <a href="https://sa.linkedin.com/company/tadbeersa" className="transition-colors" aria-label="LinkedIn">
+                <a href="https://sa.linkedin.com/company/tadbeersa" className="transition-colors hover:text-indigo-400" aria-label="LinkedIn">
                   <Linkedin size={18} />
                 </a>
                 <a  href="https://x.com/TadbeerSA"
