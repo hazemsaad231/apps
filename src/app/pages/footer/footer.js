@@ -22,16 +22,14 @@ export default function Footer() {
                 حلول مبتكرة وموثوقة لتحقيق أهدافك بكفاءة واحترافية.
               </p>
               <div className="flex gap-3 pt-2">
-                <a href="#" className="hover:text-indigo-400 transition-colors" aria-label="GitHub">
-                  <Github size={18} />
-                </a>
-                <a href="#" className="transition-colors" aria-label="LinkedIn">
+                <a href="https://sa.linkedin.com/company/tadbeersa" className="transition-colors" aria-label="LinkedIn">
                   <Linkedin size={18} />
                 </a>
-                <a href="#" className=" hover:text-indigo-400 transition-colors" aria-label="Twitter">
+                <a  href="https://x.com/TadbeerSA"
+ className=" hover:text-indigo-400 transition-colors" aria-label="Twitter">
                   <Twitter size={18} />
                 </a>
-                <a href="#" className=" hover:text-indigo-400 transition-colors" aria-label="Instagram">
+                <a  href="https://sa.linkedin.com/company/tadbeersa" className=" hover:text-indigo-400 transition-colors" aria-label="Instagram">
                   <Instagram size={18} />
                 </a>
               </div>
@@ -71,19 +69,24 @@ export default function Footer() {
               <div className="space-y-2">
                 <div className="flex gap-2 items-start">
                   <Mail size={16} className="mt-1 shrink-0" />
-                  <a href="mailto:info@example.com" className="hover:text-indigo-300 text-xs">
-                    info@example.com
+                  <a href="mailto:info@tadbeer.sa" className="hover:text-indigo-300 text-xs">
+                    info@tadbeer.sa
                   </a>
                 </div>
                 <div className="flex gap-2 items-start">
                   <Phone size={16} className="mt-1 shrink-0" />
-                  <a href="tel:+966123456789" className="hover:text-indigo-300 text-xs">
-                    +966 (123) 456-789
+                  <a href="tel:+966 55 514 4382" className="hover:text-indigo-300 text-xs">
+                    0555144382
                   </a>
                 </div>
                 <div className="flex gap-2 items-start">
                   <MapPin size={16} className="mt-1 shrink-0" />
-                  <p className="text-xs">الرياض، المملكة العربية السعودية</p>
+                  <p className="text-xs">
+                <a href="https://www.google.com/maps/place/21%C2%B033'26.3%22N+39%C2%B010'38.8%22E/@21.557312,39.177437,17z/data=!4m5!3m4!1s0x0:0x0!8m2!3d21.5573125!4d39.1774375?hl=ar-SA">
+                6174 محمد بن عبدالعزيز، 3264 Al Amir، جدة 23441، المملكة العربية
+                السعودية
+                 </a>
+              </p>
                 </div>
               </div>
             </div>
