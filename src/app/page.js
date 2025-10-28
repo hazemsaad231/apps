@@ -107,6 +107,7 @@ export default function Home() {
     }`}
   onClick={() => handleCardClick(item)}
 >
+  <Link href={`/#details`} className="flex-1">
   <div className="relative h-64 overflow-hidden bg-gray-100">
     {item.gallery?.[0]?.photo_url ? (
       <Image
@@ -144,9 +145,11 @@ export default function Home() {
             </span>
           )}
         </div>
+
       </div>
     )}
   </div>
+  </Link>
 </div>
 
                 ))}
@@ -157,7 +160,7 @@ export default function Home() {
 
               {/* Details Chance Only */}
               {selectedChance && (
-                <div className="pt-10 pb-20">
+                <div className="pt-10 pb-20" id="details">
                   <div className="w-full m-auto grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="col-span-1 md:col-span-2">
                                  {/* Sidebar */}
