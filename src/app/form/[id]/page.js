@@ -17,12 +17,12 @@ export default function Form() {
 
   const { register, handleSubmit, reset, setValue } = useForm({
     defaultValues: {
-      invest_id: "", // هنعدّلها لما id يجهز
+      invest_id: "", 
       number_of_arrows: 1
     }
   })
 
-  // لما الـ id يوصَل بعدين، نعمل setValue علشان ينعكس في الفورم
+ 
   useEffect(() => {
     if (id) {
       setValue("invest_id", id)
@@ -40,8 +40,6 @@ export default function Form() {
 
       toast.success("تم الارسال بنجاح")
      
-
-      // لو عايز ترجّع الفورم للوضع الافتراضي مع الحفاظ على invest_id:
       reset({ invest_id: id ?? "", number_of_arrows: 1 })
     } catch (err) {
       console.error("submit error", err)
