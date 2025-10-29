@@ -8,11 +8,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import axios from "axios"
 import toast from "react-hot-toast"
-import { useParams, useRouter } from "next/navigation"
+import { useParams} from "next/navigation"
 
 export default function Form() {
   const params = useParams()
-  const router = useRouter()
   const id = params?.id 
   
 
@@ -40,10 +39,6 @@ export default function Form() {
       )
 
       toast.success("تم الارسال بنجاح")
-
-      setTimeout(() => {
-         router.push("/")
-      }, 2000)
      
 
       // لو عايز ترجّع الفورم للوضع الافتراضي مع الحفاظ على invest_id:
