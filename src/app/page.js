@@ -220,7 +220,7 @@ export default function Home() {
             <div className="flex items-center gap-2 bg-white px-4 py-3 rounded-xl border border-[#dbbb39]/30 shadow-md">
               <TrendingUp className="w-5 h-5 text-[#dbbb39]" />
               <span className="text-sm font-semibold text-[#1a1a4d]">
-                <span className="text-[#dbbb39] px-1"> 3 </span> فرص متاحة
+                <span className="text-[#dbbb39] px-1"> {chances.length} </span> فرص متاحة
               </span>
             </div>
           </div>
