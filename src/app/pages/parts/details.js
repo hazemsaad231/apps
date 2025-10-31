@@ -24,7 +24,7 @@ export default function CategoriesMain({ categories }) {
   return (
     <>
       {selectedCategory ? (
-        <div className="mt-8" id={`cat-detail-${selectedCategory.id}`}>
+        <div className="mt-10" id={`cat-detail-${selectedCategory.id}`}>
           <div className="flex gap-2 items-center">
             {selectedCategory.icon_url && (
               <Image
@@ -32,10 +32,9 @@ export default function CategoriesMain({ categories }) {
                 alt="الخدمات - صورة"
                 width={50}
                 height={50}
-                className="mr-2"
               />
             )}
-            <h1 className="text-3xl font-bold text-[#262163]">{selectedCategory.name}</h1>
+            <h1 className="text-2xl md:text-3xl font-bold text-[#262163]">{selectedCategory.name}</h1>
           </div>
 
           <div className="w-full h-0.5 bg-gray-300 my-4"></div>

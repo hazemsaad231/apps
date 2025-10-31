@@ -37,7 +37,7 @@ export default function CategoriesSidebar({ categories }) {
               alt="الخدمات - صورة"
               width={30}
               height={30}
-              className="inline-block mr-2"
+              className="inline-block"
             />
           )}
           {cat.name}

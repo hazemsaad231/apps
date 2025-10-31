@@ -157,7 +157,7 @@ export default function Home() {
                       {/* Sidebar for small screens */}
                       <div className="block md:hidden col-span-1 mt-14">
                         <div className="w-full md:w-60 lg:w-80 h-max rounded-4xl bg-white shadow-lg border p-4 py-10 flex flex-col gap-3 mb-12">
-                          <h3 className="text-lg font-extrabold text-[#262163]">استثمر في تدبير</h3>
+                          <h3 className="text-xl font-extrabold text-[#262163]">استثمر في تدبير</h3>
                           <p className="text-gray-500">سجّل الآن للاستثمار في تدبير، وابدأ بمتابعة مستجدات الشركة وفرص نموها بشكل تلقائي.</p>
                           <div className="bg-[#dbbb39] text-white py-2 px-4 w-max cursor-pointer rounded-full font-semibold">
                             <Link href={`/form/${selectedChance.id}`}>استثمار الآن</Link>
@@ -168,7 +168,7 @@ export default function Home() {
                       </div>
 
                       <div className="py-12">
-                        <h3 className="text-2xl font-bold text-[#262163] mb-6 flex items-center gap-2">
+                        <h3 className="text-2xl md:text-3xl font-bold text-[#262163] mb-6 flex items-center gap-2">
                           <Info className="w-6 h-6" />
                           ابرز المعومات
                         </h3>
@@ -188,7 +188,7 @@ export default function Home() {
                     {/* Sidebar */}
                     <div className="hidden md:block col-span-1">
                       <div className="w-full md:w-60 lg:w-80 h-max rounded-4xl bg-white shadow-lg border p-4 py-10 flex flex-col gap-3 sticky top-20">
-                        <h3 className="text-lg font-extrabold text-[#262163]">استثمر في تدبير</h3>
+                        <h3 className="text-xl font-extrabold text-[#262163]">استثمر في تدبير</h3>
                         <p className="text-gray-500">سجّل الآن للاستثمار في تدبير، وابدأ بمتابعة مستجدات الشركة وفرص نموها بشكل تلقائي.</p>
                         <div className="bg-[#dbbb39] text-white py-2 px-4 w-max cursor-pointer rounded-full font-semibold">
                           <Link href={`/form/${selectedChance.id}`}>استثمار الآن</Link>
