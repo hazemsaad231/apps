@@ -14,7 +14,7 @@ export default function Footer() {
 
         {/* Main Footer Content */}
         <div className="px-4 sm:px-4 py-10 max-w-6xl mx-auto">
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-8 text-sm">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-8 text-sm">
             {/* Company Info */}
             <div className="space-y-2 lg:col-span-2">
               <h3 className="text-lg font-bold text-white">شركتنا</h3>

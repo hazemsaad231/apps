@@ -49,21 +49,17 @@ export default function Home() {
 
   const handleCardClick = (item) => {
     setSelectedChance(item);
-    // لو حابب تهز الفيو للجزء ده:
-    // const top = document.getElementById("chances")?.offsetTop || 0;
-    // window.scrollTo({ top, behavior: "smooth" });
   };
 
   const handleBackToCards = () => {
     setSelectedChance(null);
-    // scroll لفوق لو عايز:
-    // window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
     <div className="w-full font-sans">
       {/* Hero Section */}
-      <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative w-full h-screen md:h-max xl:h-screen md:py-28 flex items-center justify-center overflow-hidden">
         <Image
           src={bg || "/placeholder.svg"}
           alt="Hero Background"
@@ -74,9 +70,9 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-linear-to-r from-transparent via-[#262163]/80 to-transparent"></div>
 
-        <div className="relative z-10 text-center px-4 md:px-8 lg:px-16">
+        <div className="relative z-10 text-center px-4 md:px-8 lg:px-12">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-7xl mx-auto">
-            <div className="flex flex-col items-center justify-center m-auto md:items-start gap-6 w-full lg:w-3/4">
+            <div className="flex flex-col items-center justify-center m-auto md:items-start gap-6 w-full">
               <h6 className="text-white m-auto text-center font-light text-[2rem] md:text-4xl lg:text-5xl xl:text-6xl">
                 فرص استثمارية واعدة مع
               </h6>
@@ -97,7 +93,7 @@ export default function Home() {
             </div>
 
             <div className="hidden md:flex w-1/2 justify-center relative">
-              <div className="relative w-96 h-96">
+              <div className="relative md:w-96 md:h-96 lg:w-104 lg:h-104 ">
                 <Image
                   src={"/Layer.png"}
                   alt="Layer Image"
@@ -227,7 +223,7 @@ export default function Home() {
         </div>
       </section>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  gap-8  mt-14">
+                  <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  gap-8  mt-14`}>
                     {chances.map((item) => (
                       <div
                         key={item.id}

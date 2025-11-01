@@ -30,6 +30,7 @@ export default function Slider({ src = [],typeSrc}) {
             src={img}
             className="w-full h-full object-center rounded-4xl"
             alt={`slide-${index}`}
+            loading={index === 0 ? 'eager' : 'lazy'}
           />
         </SwiperSlide>
       ))}

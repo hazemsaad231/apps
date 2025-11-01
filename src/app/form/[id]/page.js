@@ -75,7 +75,6 @@ export default function Form() {
                 placeholder="اكتب اسمك الكامل"
                 {...register("name", { required: "الاسم مطلوب" })}
               />
-              {errors.name && <p className="text-sm text-red-600 mt-1">{errors.name.message}</p>}
             </div>
 
             <div>
@@ -85,7 +84,6 @@ export default function Form() {
                 placeholder="اكتب رقم هاتفك"
                 {...register("phone", { required: "رقم الهاتف مطلوب" })}
               />
-              {errors.phone && <p className="text-sm text-red-600 mt-1">{errors.phone.message}</p>}
             </div>
 
             <div>
@@ -101,7 +99,6 @@ export default function Form() {
                   valueAsNumber: true,
                 })}
               />
-              {errors.number_of_arrows && <p className="text-sm text-red-600 mt-1">{errors.number_of_arrows.message}</p>}
             </div>
 
             <div>
@@ -109,11 +106,9 @@ export default function Form() {
               <textarea
                 id="notes"
                 placeholder="ملاحظات"
-                {...register("notes", { required: "برجاء إضافة ملاحظة" })}
+                {...register("notes", { required: false})}
                 className="w-full p-2 rounded border h-20"
-              />
-              {errors.notes && <p className="text-sm text-red-600 mt-1">{errors.notes.message}</p>}
-            </div>
+              />            </div>
 
             <div className="flex justify-between mt-4">
               <Button
