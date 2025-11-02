@@ -25,7 +25,7 @@ export default function CategoriesMain({ categories }) {
     <>
       {selectedCategory ? (
         <div className="mt-10" id={`cat-detail-${selectedCategory.id}`}>
-          <div className="flex gap-3 items-center">
+          <div className="flex gap-2 items-center">
             {selectedCategory.icon_url && (
               <Image
                 src={selectedCategory.icon_url}
