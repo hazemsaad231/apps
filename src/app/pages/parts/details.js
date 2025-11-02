@@ -34,11 +34,17 @@ export default function CategoriesMain({ categories }) {
                 height={50}
               />
             )}
-            <h1 className="text-2xl md:text-3xl font-bold text-[#262163]">{selectedCategory.name}</h1>
+            <h1 className="text-2xl md:text-3xl font-bold text-[#262163]">{selectedCategory.name || ""}</h1>
           </div>
 
           <div className="w-full h-0.5 bg-gray-300 my-4"></div>
-          <p className="text-lg text-[#262163] font-medium">{selectedCategory.description}</p>
+          {/* <p className="text-lg text-[#262163] font-medium">{selectedCategory.description || ""}</p> */}
+
+<div
+  className="text-lg text-[#262163] font-medium leading-relaxed prose prose-blue max-w-none"
+  dangerouslySetInnerHTML={{ __html: selectedCategory.description || "" }}
+></div>
+
         </div>
       ) : null}
     </>
