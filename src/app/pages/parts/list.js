@@ -24,11 +24,11 @@ export default function CategoriesSidebar({ categories }) {
         <li
           key={cat.id}
           onClick={() => handleClick(cat.id)}
-          className={`flex items-center font-normal py-2 px-3 rounded-full transition-colors
+          className={`flex items-center gap-2 font-normal py-2 px-3 rounded-full transition-colors
             ${
               activeId === cat.id
-                ? "bg-[#262163] text-white"
-                : "text-[#262163] hover:bg-[#262163]/10 hover:text-[#262163]"
+                ? "bg-[#262163]/75 text-white"
+                : "text-[#262163] hover:bg-[#262163]/10 "
             }`}
         >
           {cat.icon_url && cat.icon_url.startsWith("http") && (
@@ -38,6 +38,7 @@ export default function CategoriesSidebar({ categories }) {
               width={30}
               height={30}
               className="inline-block"
+              priority
             />
           )}
           {cat.name}

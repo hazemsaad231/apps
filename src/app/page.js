@@ -250,7 +250,7 @@ export default function Home() {
                               </div>
                             )}
                             <div className="absolute top-4 right-4 bg-linear-to-r from-[#dbbb39] to-[#f5d76e] text-[#1a1a4d] px-3 py-1 rounded-full text-xs font-bold">
-                              فرصه {item.type}
+                            {item.type}
                             </div>
                           </div>
                           <div className="flex-1 p-5 md:p-6 flex flex-col justify-between">
