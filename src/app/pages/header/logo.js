@@ -3,13 +3,13 @@ const Logo = () => {
     return (
 
 
-       <div className="hidden md:block">
+       <div className="w-24 md:w-40 lg:w-44 xl:w-52">
         <a href="https://tadbeer-nine.vercel.app/">
   <Image
     src="/logo.webp"
     alt="logo"
-    width={180}
-    height={180}
+    width={200}
+    height={200}
     className="object-contain"
     priority
   />
