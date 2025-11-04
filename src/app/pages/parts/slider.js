@@ -12,8 +12,9 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { EffectFade, Navigation} from 'swiper/modules';
+import Image from 'next/image';
 
-export default function Slider({ src = [],typeSrc}) {
+export default function Slider({ src = [] }) {
   return (
     <Swiper
       spaceBetween={30}
@@ -26,11 +27,12 @@ export default function Slider({ src = [],typeSrc}) {
       {src.map((img, index) => (
         <SwiperSlide key={index}>
          
-          <img
+          <Image
             src={img}
             className="w-full h-full object-center rounded-4xl"
             alt={`slide-${index}`}
-            loading={index === 0 ? 'eager' : 'lazy'}
+           fill
+           priority
           />
         </SwiperSlide>
       ))}

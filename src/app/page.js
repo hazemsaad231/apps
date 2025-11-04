@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative w-full h-screen md:h-max md:py-40 lg:h-max lg:py-48 xl:h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative w-full h-screen md:h-max md:py-40 lg:h-max lg:py-48  xl:h-screen flex items-center justify-center overflow-hidden">
         <Image
           src={bg || "/placeholder.svg"}
           alt="Hero Background"
