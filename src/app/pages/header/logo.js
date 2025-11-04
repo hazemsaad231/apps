@@ -4,6 +4,7 @@ const Logo = () => {
 
 
        <div className="hidden md:block">
+        <a href="https://tadbeer-nine.vercel.app/">
   <Image
     src="/logo.webp"
     alt="logo"
@@ -12,6 +13,7 @@ const Logo = () => {
     className="object-contain"
     priority
   />
+</a>
 </div>
 
     );

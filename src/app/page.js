@@ -70,9 +70,9 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-linear-to-bl from-transparent via-[#262163] to-transparent"></div>
 
-        <div className="relative z-10 text-center px-4 md:px-8 lg:px-12">
-          <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 max-w-7xl mx-auto">
-            <div className="flex flex-col items-center justify-center m-auto md:items-start gap-6 w-full">
+        <div className="relative z-10 text-center px-4">
+          <div className="flex flex-col md:flex-row justify-center gap-8 max-w-8xl mx-auto">
+            <div className="flex flex-col justify-center m-auto gap-6 w-full">
               <h6 className="text-white m-auto text-center font-light text-3xl md:text-4xl lg:text-4xl xl:text-5xl">
                 فرص استثمارية واعدة مع
               </h6>
