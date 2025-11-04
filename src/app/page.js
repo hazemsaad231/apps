@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative w-full h-screen md:h-max md:py-44 lg:h-max lg:py-52 xl:h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative w-full h-screen md:h-max md:py-48 lg:h-max lg:py-56 xl:h-screen flex items-center justify-center overflow-hidden">
         <Image
           src={bg || "/placeholder.svg"}
           alt="Hero Background"
@@ -76,10 +76,10 @@ export default function Home() {
               <h6 className="text-white m-auto text-center font-light text-3xl md:text-3xl lg:text-4xl xl:text-5xl">
                 فرص استثمارية واعدة مع
               </h6>
-              <h1 className="text-white text-center m-auto font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+              <h1 className="text-white text-center m-auto font-bold text-[2.6rem] md:text-5xl lg:text-6xl xl:text-7xl">
                 تدبير المتخصصة
               </h1>
-              <p className="text-white m-auto font-light text-base md:text-lg max-w-lg leading-relaxed">
+              <p className="text-white m-auto font-light text-base md:text-md lg:text-lg max-w-lg leading-relaxed">
                شركة متخصصة في تقديم الخدمات المالية والمهنية لدعم نمو وتطور التجارة والأعمال. بفضل خبرتنا العميقة وفريقنا المتخصص، نوفر بيئة استثمارية موثوقة ومبنية على أسس استراتيجية قوية. انضم إلينا واستثمر في مستقبلٍ واعد مليء بالفرص
               </p>
               <div className="text-center m-auto mt-4">
@@ -145,7 +145,7 @@ export default function Home() {
                     </button>
                   </div>
 
-                  <div className="max-w-8xl md:max-w-7xl lg:max-w-6xl m-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="max-w-8xl md:max-w-7xl lg:max-w-6xl xl:max-w-6xl m-auto grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="col-span-1 md:col-span-2">
                       <Slider
                         src={(selectedChance.gallery || []).map((i) => i.photo_url)}
@@ -198,7 +198,7 @@ export default function Home() {
                 </div>
               ) : (
                 /* Cards area (بتظهر بس لو مفيش selectedChance) */
-                <div className="pb-28 max-w-8xl md:max-w-7xl lg:max-w-6xl m-auto">
+                <div className="pb-28 max-w-8xl md:max-w-7xl lg:max-w-6xl xl:max-w-6xl m-auto">
               
  <section className="py-6 px-6 bg-linear-to-r from-[#1a1a4d]/2 to-[#dbbb39]/2 border border-[#dbbb39]/40 rounded-2xl">
         <div className="mx-auto">
@@ -224,7 +224,7 @@ export default function Home() {
         </div>
       </section>
 
-                  <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 mt-14`}>
+                  <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-14 md:gap-20 xl:gap-40 mt-14`}>
                     {chances.map((item) => (
                       <div
                         key={item.id}
