@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative w-full h-screen md:h-max xl:h-screen md:py-28 flex items-center justify-center overflow-hidden">
+      <section className="relative w-full h-screen md:h-max md:py-40 lg:h-max lg:py-48 xl:h-screen flex items-center justify-center overflow-hidden">
         <Image
           src={bg || "/placeholder.svg"}
           alt="Hero Background"
@@ -71,12 +71,12 @@ export default function Home() {
         <div className="absolute inset-0 bg-linear-to-bl from-transparent via-[#262163] to-transparent"></div>
 
         <div className="relative z-10 text-center px-4 md:px-8 lg:px-12">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 max-w-7xl mx-auto">
             <div className="flex flex-col items-center justify-center m-auto md:items-start gap-6 w-full">
-              <h6 className="text-white m-auto text-center font-light text-[2rem] md:text-4xl lg:text-5xl xl:text-6xl">
+              <h6 className="text-white m-auto text-center font-light text-3xl md:text-4xl lg:text-4xl xl:text-5xl">
                 فرص استثمارية واعدة مع
               </h6>
-              <h1 className="text-white text-center m-auto font-bold text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+              <h1 className="text-white text-center m-auto font-bold text-4xl md:text-6xl lg:text-6xl xl:text-7xl">
                 تدبير المتخصصة
               </h1>
               <p className="text-white m-auto font-light text-base md:text-lg max-w-lg leading-relaxed">
@@ -138,14 +138,14 @@ export default function Home() {
                   <div className="flex items-center gap-4 mb-6">
                     <button
                       onClick={handleBackToCards}
-                      className="inline-flex items-center gap-2 bg-white border px-3 py-2 rounded-full shadow hover:shadow-md"
+                      className="inline-flex items-center cursor-pointer gap-2 bg-[#f5d76e] border px-3 py-2 rounded-full shadow hover:shadow-md"
                     >
-                      <ArrowLeft className="w-4 h-4" />
-                    <span className="text-gray-500 mr-2">رجوع</span>
+                      <ArrowLeft className="w-4 h-4 text-white" />
+                    <span className="text-white mr-2">رجوع</span>
                     </button>
                   </div>
 
-                  <div className="w-full m-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="max-w-8xl md:max-w-7xl lg:max-w-6xl m-auto grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="col-span-1 md:col-span-2">
                       <Slider
                         src={(selectedChance.gallery || []).map((i) => i.photo_url)}
@@ -198,9 +198,9 @@ export default function Home() {
                 </div>
               ) : (
                 /* Cards area (بتظهر بس لو مفيش selectedChance) */
-                <div className="pb-28 max-w-7xl m-auto">
+                <div className="pb-28 max-w-8xl md:max-w-7xl lg:max-w-6xl m-auto">
               
- <section className="py-8 px-8 bg-linear-to-r from-[#1a1a4d]/2 to-[#dbbb39]/2 border border-[#dbbb39]/40 rounded-2xl">
+ <section className="py-6 px-6 bg-linear-to-r from-[#1a1a4d]/2 to-[#dbbb39]/2 border border-[#dbbb39]/40 rounded-2xl">
         <div className="mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
@@ -224,7 +224,7 @@ export default function Home() {
         </div>
       </section>
 
-                  <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  gap-8  mt-14`}>
+                  <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 mt-14`}>
                     {chances.map((item) => (
                       <div
                         key={item.id}
@@ -254,7 +254,7 @@ export default function Home() {
                             {item.type}
                             </div>
                           </div>
-                          <div className="flex-1 p-5 md:p-6 flex flex-col justify-between">
+                          <div className="flex-1 p-2 md:p-4 flex flex-col justify-between">
                             <h3 className="text-lg text-center md:text-xl font-bold text-[#1a1a4d] line-clamp-2 group-hover:text-[#dbbb39] transition-colors mb-2">
                               {item.name}
                             </h3>
