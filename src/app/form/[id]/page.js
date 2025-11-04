@@ -57,7 +57,7 @@ export default function Form() {
   }
 
   return (
-    <div className="h-full flex items-center justify-center py-20 p-4 bg-gray-100">
+    <div className="h-full flex items-center justify-center py-20 p-4 ">
       <Card className="w-full md:w-1/2 shadow-lg">
         <CardHeader>
           <CardTitle>نموذج استثمار</CardTitle>

@@ -57,7 +57,7 @@ export default function Home() {
   };
 
   return (
-    <div className="w-full font-sans">
+    <div className="w-full">
       {/* Hero Section */}
       <section className="relative w-full h-screen md:h-max xl:h-screen md:py-28 flex items-center justify-center overflow-hidden">
         <Image
@@ -68,7 +68,7 @@ export default function Home() {
           placeholder="blur"
           priority
         />
-        <div className="absolute inset-0 bg-linear-to-r from-transparent via-[#262163]/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-bl from-transparent via-[#262163] to-transparent"></div>
 
         <div className="relative z-10 text-center px-4 md:px-8 lg:px-12">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-7xl mx-auto">
@@ -85,6 +85,7 @@ export default function Home() {
               <div className="text-center m-auto mt-4">
                 <Link
                   href="#chances"
+                  onClick={()=> handleBackToCards()}
                   className="bg-linear-to-r from-[#dbbb39] to-[#f5d76e] text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-[#dbbb39]/50 hover:scale-105 transition-all"
                 >
                   استكشف الفرص الآن
@@ -93,7 +94,7 @@ export default function Home() {
             </div>
 
             <div className="hidden md:flex w-1/2 justify-center relative">
-              <div className="relative md:w-96 md:h-96 lg:w-104 lg:h-104 ">
+              <div className="relative md:w-60 md:h-60 lg:w-80 lg:h-80 ">
                 <Image
                   src={"/Layer.png"}
                   alt="Layer Image"
@@ -106,7 +107,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-         <div className="absolute bottom-0 w-full h-4 bg-white rounded-t-full"></div>
+         <div className="absolute bottom-0 w-full h-6 bg-white rounded-t-full"></div>
       </section>
 
       {/* Chances Section */}

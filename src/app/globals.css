@@ -172,3 +172,8 @@ body {
   font-size: 10px; /* حجم السهم */
   font-weight: bold;
 }
+
+
+.clip-slant-top {
+  clip-path: polygon(0 0%, 100% 12%, 100% 100%, 0 100%);
+}

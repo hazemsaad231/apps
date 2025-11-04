@@ -27,7 +27,7 @@ export default function CategoriesSidebar({ categories }) {
           className={`flex items-center gap-2 font-normal py-2 px-3 rounded-full transition-colors
             ${
               activeId === cat.id
-                ? "bg-[#262163]/75 text-white"
+                ? "border border-[#262163] text-[#262163] bg-[#262163]/10 "
                 : "text-[#262163] hover:bg-[#262163]/10 "
             }`}
         >

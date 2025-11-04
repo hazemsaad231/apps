@@ -15,8 +15,8 @@ export default function Header() {
     <header>
       <div>
   {/* desktop navbar */}
-      <div className="bg-linear-to-r from-transparent via-[#262163]/80 to-transparent">
-        <nav className="relative bg-[#262163] text-white flex justify-between items-center px-2 md:px-4 xl:px-8 py-1">
+      <div className="bg-linear-to-r from-[#262163] to-[#262163] shadow-md">
+        <nav className="relative flex justify-between items-center px-2 md:px-4 xl:px-8 py-1">
 
           
   <div className="flex">
@@ -24,8 +24,7 @@ export default function Header() {
           </div>
         
           <ul>
-            <li> <Link href="/#footer" className={`hover:text-indigo-900 hover:bg-white border border-white rounded-full p-2 text-md
-              md:px-4 md:py-2 md:text-lg`}>
+            <li> <Link href="#footer" className={`block bg-white  text-[#262163] rounded-full py-1 px-4 hover:bg-[#262163] hover:text-white text-md`}>
               تواصل معنا
               </Link></li>
           </ul>

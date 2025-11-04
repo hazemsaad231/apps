@@ -6,7 +6,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="w-full text-white bg-[#262163]" id="footer">
+    <footer className="w-full text-white bg-[#262163] clip-slant-top relative overflow-hidden p-4" id="footer">
         {/* Background Image */}
 
 
@@ -111,5 +111,7 @@ export default function Footer() {
           </div>
         </div>
     </footer>
+
+
   )
 }
