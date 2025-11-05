@@ -1,4 +1,4 @@
-// import bg from "../../../../public/bg.jpg";
+import bg from "../../../../public/bg.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,9 +11,11 @@ export const Hero = ({handleBackToCards}) => {
         <div>
                 <section className="relative w-full h-screen md:h-max md:py-48 lg:h-max lg:py-56 xl:h-screen flex items-center justify-center overflow-hidden">
         <Image
-          src={"/bg.jpg"}
+          src={bg}
           alt="Hero Background"
           fill
+          sizes="100vw"
+          placeholder="blur"
           className="object-cover w-full h-full"
           priority
         />
