@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import bg from "../../public/bg.jpg";
 import CategoriesSidebar from "./pages/parts/list";
 import CategoriesMain from "./pages/parts/details";
 import Slider from "./pages/parts/slider";
@@ -12,6 +11,7 @@ import { Sparkles , TrendingUp } from "lucide-react";
 
 // lucide-react icons
 import { RefreshCw, Info, ArrowLeft } from "lucide-react";
+import { Hero } from "./pages/parts/hero";
 
 export default function Home() {
   const [chances, setChances] = useState([]);
@@ -58,56 +58,7 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative w-full h-screen md:h-max md:py-48 lg:h-max lg:py-56 xl:h-screen flex items-center justify-center overflow-hidden">
-        <Image
-          src={bg || "/placeholder.svg"}
-          alt="Hero Background"
-          fill
-          className="object-cover w-full h-full"
-          placeholder="blur"
-          priority
-        />
-        <div className="absolute inset-0 bg-linear-to-bl from-transparent via-[#262163] to-transparent"></div>
-
-        <div className="relative z-10 text-center px-4">
-          <div className="flex flex-col md:flex-row justify-center md:gap-10 lg:gap-12 xl:gap-16 mx-auto">
-            <div className="flex flex-col justify-center m-auto gap-6 w-full">
-              <h6 className="text-white m-auto text-center font-light text-3xl md:text-3xl lg:text-4xl xl:text-5xl">
-                فرص استثمارية واعدة مع
-              </h6>
-              <h1 className="text-white text-center m-auto font-bold text-[2.6rem] md:text-5xl lg:text-6xl xl:text-7xl">
-                تدبير المتخصصة
-              </h1>
-              <p className="text-white m-auto font-light text-base md:text-md lg:text-lg max-w-lg leading-relaxed">
-               شركة متخصصة في تقديم الخدمات المالية والمهنية لدعم نمو وتطور التجارة والأعمال. بفضل خبرتنا العميقة وفريقنا المتخصص، نوفر بيئة استثمارية موثوقة ومبنية على أسس استراتيجية قوية. انضم إلينا واستثمر في مستقبلٍ واعد مليء بالفرص
-              </p>
-              <div className="text-center m-auto mt-4">
-                <Link
-                  href="#chances"
-                  onClick={()=> handleBackToCards()}
-                  className="bg-linear-to-r from-[#dbbb39] to-[#f5d76e] text-white px-6 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-[#dbbb39]/50 hover:scale-105 transition-all"
-                >
-                  استكشف الفرص الآن
-                </Link>
-              </div>
-            </div>
-
-            <div className="hidden md:flex justify-center relative">
-              <div className="relative md:w-60 md:h-60 lg:w-80 lg:h-80 ">
-                <Image
-                  src={"/Layer.png"}
-                  alt="Layer Image"
-                  width={320}
-                  height={320}
-                  className="relative z-10 w-full h-full object-contain drop-shadow-2xl"
-                  priority
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-         <div className="absolute bottom-0 w-full h-6 bg-white rounded-t-full"></div>
-      </section>
+      <Hero handleBackToCards={handleBackToCards} />
 
       {/* Chances Section */}
       <section className="w-full bg-white pt-10 px-4 md:px-8 lg:px-16" id="chances">
@@ -183,7 +134,8 @@ export default function Home() {
 
                     {/* Sidebar */}
                     <div className="hidden md:block col-span-1">
-                      <div className="w-full md:w-60 lg:w-80 h-max rounded-4xl bg-white shadow-lg border border-gray-200 p-4 py-10 flex flex-col gap-3 sticky top-20">
+                      <div className="w-full md:w-60 lg:w-80 h-max rounded-4xl bg-white shadow-lg border border-gray-200
+                       p-4 py-10 flex flex-col gap-3 sticky top-20">
                         <h3 className="text-xl font-extrabold text-[#262163]">استثمر في تدبير</h3>
                         <p className="text-gray-500">سجّل الآن للاستثمار في تدبير، وابدأ بمتابعة مستجدات الشركة وفرص نموها بشكل تلقائي.</p>
                         <div className="bg-[#dbbb39] text-white py-2 px-4 w-max cursor-pointer rounded-full font-semibold">
