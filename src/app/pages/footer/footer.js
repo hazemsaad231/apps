@@ -67,19 +67,19 @@ export default function Footer() {
             <div className="space-y-2">
               <h3 className="text-md font-bold text-white">تواصل معنا</h3>
               <div className="space-y-2">
-                <div className="flex gap-2 items-start">
+                <div className="flex gap-2 items-center">
                   <Mail size={16} className="mt-1 shrink-0" />
                   <a href="mailto:info@tadbeer.sa" className="hover:text-indigo-300 text-xs">
                     info@tadbeer.sa
                   </a>
                 </div>
-                <div className="flex gap-2 items-start">
+                <div className="flex gap-2 items-center">
                   <Phone size={16} className="mt-1 shrink-0" />
                   <a href="tel:+966 55 514 4382" className="hover:text-indigo-300 text-xs">
                     0555144382
                   </a>
                 </div>
-                <div className="flex gap-2 items-start">
+                <div className="flex gap-2 items-center">
                   <MapPin size={16} className="mt-1 shrink-0" />
                   <p className="text-xs">
                 <a href="https://www.google.com/maps/place/21%C2%B033'26.3%22N+39%C2%B010'38.8%22E/@21.557312,39.177437,17z/data=!4m5!3m4!1s0x0:0x0!8m2!3d21.5573125!4d39.1774375?hl=ar-SA">

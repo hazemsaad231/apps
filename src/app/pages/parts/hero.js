@@ -19,7 +19,7 @@ export const Hero = ({handleBackToCards}) => {
           className="object-cover w-full h-full"
           priority
         />
-        <div className="absolute inset-0 bg-linear-to-bl from-transparent via-[#262163] to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-bl from-transparent via-[#262163] to-[#262163]/30"></div>
 
         <div className="relative z-10 text-center px-4">
           <div className="flex flex-col md:flex-row justify-center md:gap-10 lg:gap-12 xl:gap-16 mx-auto">
