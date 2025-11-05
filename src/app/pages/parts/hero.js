@@ -16,7 +16,6 @@ export const Hero = ({handleBackToCards}) => {
           fill
           placeholder="blur"
           className="object-cover w-full h-full"
-          priority
         />
         <div className="absolute inset-0 bg-linear-to-bl from-transparent via-[#262163] to-[#262163]/80"></div>
 
