@@ -15,8 +15,8 @@ export default function Header() {
     <header>
       <div>
   {/* desktop navbar */}
-      <div className="bg-linear-to-r from-[#262163] to-[#262163]/90 shadow-md p-2">
-        <nav className="relative flex justify-between items-center px-2 md:px-4 xl:px-8">
+      <div className="bg-linear-to-r from-[#262163] to-[#262163]/90 shadow-md">
+        <nav className="relative flex justify-between items-center px-1 md:px-4 xl:px-6">
 
           
   <div className="flex">
