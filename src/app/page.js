@@ -137,7 +137,7 @@ export default function Home() {
                   <div className="flex items-center gap-4 mb-6">
                     <button
                       onClick={handleBackToCards}
-                      className="inline-flex items-center cursor-pointer gap-2 bg-[#f5d76e] border px-3 py-2 rounded-full shadow hover:shadow-md"
+                      className="inline-flex items-center cursor-pointer gap-2 bg-[#f5d76e] px-3 py-2 rounded-full shadow hover:shadow-md"
                     >
                       <ArrowLeft className="w-4 h-4 text-white" />
                     <span className="text-white mr-2">رجوع</span>
@@ -183,7 +183,7 @@ export default function Home() {
 
                     {/* Sidebar */}
                     <div className="hidden md:block col-span-1">
-                      <div className="w-full md:w-60 lg:w-80 h-max rounded-4xl bg-white shadow-lg border p-4 py-10 flex flex-col gap-3 sticky top-20">
+                      <div className="w-full md:w-60 lg:w-80 h-max rounded-4xl bg-white shadow-lg border border-gray-200 p-4 py-10 flex flex-col gap-3 sticky top-20">
                         <h3 className="text-xl font-extrabold text-[#262163]">استثمر في تدبير</h3>
                         <p className="text-gray-500">سجّل الآن للاستثمار في تدبير، وابدأ بمتابعة مستجدات الشركة وفرص نموها بشكل تلقائي.</p>
                         <div className="bg-[#dbbb39] text-white py-2 px-4 w-max cursor-pointer rounded-full font-semibold">
