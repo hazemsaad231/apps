@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Instagram } from "lucide-react"
+import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram } from "lucide-react"
 
 
 export default function Footer() {
@@ -23,21 +23,21 @@ export default function Footer() {
               </p>
               <div className="flex gap-3 pt-2">
                 <a href="https://sa.linkedin.com/company/tadbeersa" className="transition-colors hover:text-indigo-400" aria-label="LinkedIn">
-                  <Linkedin size={18} />
+                  <Linkedin size={20} />
                 </a>
                 <a  href="https://x.com/TadbeerSA"
  className=" hover:text-indigo-400 transition-colors" aria-label="Twitter">
-                  <Twitter size={18} />
+                  <Twitter size={20} />
                 </a>
                 <a  href="https://sa.linkedin.com/company/tadbeersa" className=" hover:text-indigo-400 transition-colors" aria-label="Instagram">
-                  <Instagram size={18} />
+                  <Instagram size={20} />
                 </a>
               </div>
             </div>
 
             {/* Quick Links */}
             <div className="space-y-2">
-              <h3 className="text-sm font-semibold text-white">روابط سريعة</h3>
+              <h3 className="text-md font-bold text-white">روابط سريعة</h3>
               <ul className="space-y-1">
                 {["الرئيسية", "عن الشركة", "الخدمات", "المشاريع", "المدونة"].map((link) => (
                   <li key={link}>
@@ -51,7 +51,7 @@ export default function Footer() {
 
             {/* Support */}
             <div className="space-y-2">
-              <h3 className="text-sm font-semibold text-white">الدعم</h3>
+              <h3 className="text-md font-bold text-white">الدعم</h3>
               <ul className="space-y-1">
                 {["مركز المساعدة", "الأسئلة الشائعة", "سياسة الخصوصية", "شروط الخدمة", "اتصل بنا"].map((link) => (
                   <li key={link}>
@@ -65,7 +65,7 @@ export default function Footer() {
 
             {/* Contact Info */}
             <div className="space-y-2">
-              <h3 className="text-sm font-semibold text-white">تواصل معنا</h3>
+              <h3 className="text-md font-bold text-white">تواصل معنا</h3>
               <div className="space-y-2">
                 <div className="flex gap-2 items-start">
                   <Mail size={16} className="mt-1 shrink-0" />

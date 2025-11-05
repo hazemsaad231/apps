@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import bg from "../../public/bg.jpg";
-// import layer from "../../public/Layer.png";
 import CategoriesSidebar from "./pages/parts/list";
 import CategoriesMain from "./pages/parts/details";
 import Slider from "./pages/parts/slider";
@@ -25,8 +24,8 @@ export default function Home() {
     setError(null);
     try {
       const res = await fetch(
-        "https://tadbeer.wj.edu.sa/public/api/invests?type&min_price&max_price&per_page",
-        { cache: "no-store" }
+        "https://tadbeer.wj.edu.sa/public/api/invests?type&min_price&max_price&per_page"
+        
       );
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
