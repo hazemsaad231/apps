@@ -1,4 +1,3 @@
-
 import bg from "../../../../public/bg.jpg";
 import Image from "next/image";
 import Link from "next/link";
