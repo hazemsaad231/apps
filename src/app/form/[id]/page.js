@@ -74,6 +74,7 @@ export default function Form() {
                 id="name"
                 placeholder="اكتب اسمك الكامل"
                 {...register("name", { required: "الاسم مطلوب" })}
+                className='border border-gray-200 rounded p-2'
               />
             </div>
 
@@ -83,6 +84,7 @@ export default function Form() {
                 id="phone"
                 placeholder="اكتب رقم هاتفك"
                 {...register("phone", { required: "رقم الهاتف مطلوب" })}
+                className='border border-gray-200 rounded p-2'
               />
             </div>
 
@@ -98,6 +100,7 @@ export default function Form() {
                   min: { value: 1, message: "لا يمكن أن تكون أقل من 1" },
                   valueAsNumber: true,
                 })}
+                className='border border-gray-200 rounded p-2'
               />
             </div>
 
@@ -107,7 +110,7 @@ export default function Form() {
                 id="notes"
                 placeholder="ملاحظات"
                 {...register("notes", { required: false})}
-                className="w-full p-2 rounded border h-20"
+                className="w-full p-2 rounded border h-20 border-gray-200"
               />            </div>
 
             <div className="flex justify-between mt-4">
@@ -116,6 +119,7 @@ export default function Form() {
                 variant="outline"
                 onClick={() => reset({ invest_id: id ?? "", number_of_arrows: 1 })}
                 disabled={loading}
+                className="cursor-pointer border-[#DFC96D] hover:bg-[#c9b25a]"
               >
                 إعادة تعيين
               </Button>

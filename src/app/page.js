@@ -88,7 +88,7 @@ export default function Home() {
                   <div className="flex items-center gap-4 mb-6">
                     <button
                       onClick={handleBackToCards}
-                      className="inline-flex items-center cursor-pointer gap-2 bg-[#f5d76e] px-3 py-2 rounded-full shadow hover:shadow-md"
+                      className="inline-flex items-center cursor-pointer gap-2 bg-[#dbbb39]  px-3 py-2 rounded-full shadow hover:shadow-md"
                     >
                       <ArrowLeft className="w-4 h-4 text-white" />
                     <span className="text-white mr-2">رجوع</span>
