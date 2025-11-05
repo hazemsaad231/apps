@@ -3,7 +3,7 @@ const Logo = () => {
     return (
 
 
-       <div className="w-24 md:w-40 lg:w-44 xl:w-52">
+       <div className="w-28 sm:w-32 md:w-40 lg:w-44 xl:w-52">
         <a href="https://tadbeer-nine.vercel.app/">
   <Image
     src="/logo.webp"

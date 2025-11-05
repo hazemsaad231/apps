@@ -224,7 +224,7 @@ export default function Home() {
         </div>
       </section>
 
-                  <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-14 md:gap-20 xl:gap-40 mt-14`}>
+                  <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-14 md:gap-20 lg:gap-36 xl:gap-48 mt-14`}>
                     {chances.map((item) => (
                       <div
                         key={item.id}
