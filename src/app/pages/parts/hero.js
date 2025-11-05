@@ -1,4 +1,4 @@
-import bg from "../../../../public/bg.jpg";
+// import bg from "../../../../public/bg.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,14 +10,14 @@ export const Hero = ({handleBackToCards}) => {
     return (
         <div>
                 <section className="relative w-full h-screen md:h-max md:py-48 lg:h-max lg:py-56 xl:h-screen flex items-center justify-center overflow-hidden">
-        <Image
+        {/* <Image
           src={bg}
           alt="Hero Background"
           fill
           placeholder="blur"
           className="object-cover w-full h-full"
           priority
-        />
+        /> */}
         <div className="absolute inset-0 bg-linear-to-bl from-transparent via-[#262163] to-[#262163]/80"></div>
 
         <div className="relative z-10 text-center px-4">
@@ -44,7 +44,7 @@ export const Hero = ({handleBackToCards}) => {
             </div>
 
             <div className="hidden md:flex justify-center relative">
-              {/* <div className="relative md:w-60 md:h-60 lg:w-80 lg:h-80 ">
+              <div className="relative md:w-60 md:h-60 lg:w-80 lg:h-80 ">
                 <Image
                   src={"/Layer.png"}
                   alt="Layer Image"
@@ -52,7 +52,7 @@ export const Hero = ({handleBackToCards}) => {
                   height={320}
                   className="relative z-10 w-full h-full object-contain drop-shadow-2xl"
                 />
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
