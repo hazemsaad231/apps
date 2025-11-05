@@ -8,7 +8,7 @@ import Link from "next/link";
 export const Hero = ({handleBackToCards}) => {
     
     return (
-        <div className="flex flex-col items-center justify-center h-screen bg-linear-to-r from-[#262163] to-[#262163]/90 shadow-md">
+        <div>
                 <section className="relative w-full h-screen md:h-max md:py-48 lg:h-max lg:py-56 xl:h-screen flex items-center justify-center overflow-hidden">
         <Image
           src={bg || "/placeholder.svg"}
