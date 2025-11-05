@@ -16,6 +16,7 @@ export const Hero = ({handleBackToCards}) => {
           fill
           placeholder="blur"
           className="object-cover w-full h-full"
+          priority
         />
         <div className="absolute inset-0 bg-linear-to-bl from-transparent via-[#262163] to-[#262163]/80"></div>
 
@@ -43,7 +44,7 @@ export const Hero = ({handleBackToCards}) => {
             </div>
 
             <div className="hidden md:flex justify-center relative">
-              <div className="relative md:w-60 md:h-60 lg:w-80 lg:h-80 ">
+              {/* <div className="relative md:w-60 md:h-60 lg:w-80 lg:h-80 ">
                 <Image
                   src={"/Layer.png"}
                   alt="Layer Image"
@@ -51,7 +52,7 @@ export const Hero = ({handleBackToCards}) => {
                   height={320}
                   className="relative z-10 w-full h-full object-contain drop-shadow-2xl"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
