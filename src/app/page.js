@@ -253,7 +253,7 @@ import ClientHome from "./pages/parts/clinetHome";
 
 export default async function Home() {
   const res = await fetch("https://tadbeer.wj.edu.sa/public/api/invests?type&min_price&max_price&per_page", {
-    next: { revalidate: 60 } // تحديث البيانات كل 60 ثانية
+    next: { revalidate: 30 } // تحديث البيانات كل30 ثانية
   });
 
   if (!res.ok) {

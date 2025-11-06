@@ -152,7 +152,7 @@ export default function ClientHome({ initialChances = [], fetchError = false }) 
                     </div>
                   </section>
 
-                  <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-14 md:gap-20 lg:gap-40 xl:gap-60 mt-14`}>
+                  <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-y-16 gap-x-14 md:gap-x-20 lg:gap-x-40 xl:gap-x-60 mt-14`}>
                     {chances.map((item) => (
                       <div
                         key={item.id}
