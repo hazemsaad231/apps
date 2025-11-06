@@ -11,7 +11,6 @@ const Logo = () => {
     width={200}
     height={200}
     className="object-contain"
-    priority
   />
 </a>
 </div>
