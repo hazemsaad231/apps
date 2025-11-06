@@ -51,6 +51,7 @@ export const Hero = ({handleBackToCards}) => {
                   width={320}
                   height={320}
                   className="relative z-10 w-full h-full object-contain drop-shadow-2xl"
+                  priority
                 />
               </div>
             </div>
